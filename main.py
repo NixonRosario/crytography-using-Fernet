@@ -22,11 +22,11 @@ def cipher():
     file.close()
     print('Encrypted data:- ', encrypted)
 
-    n = input('If you want to decrypt select (y/n):- ') # same process is repeated
+    n = input('If you want to decrypt select (y/n):- ') # if y is enterd decryption will take place
 
     if n == 'y':
         decrypted = obj.decrypt(encrypted)
-        utf = decrypted.decode('utf-8')
+        utf = decrypted.decode('utf-8') # .decode() is used to convert bytes to text
         print("Decrypted msg:- ", utf)
     else:
         print("Thank You!!")
