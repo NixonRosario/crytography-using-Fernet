@@ -4,7 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet #install cryptography and import Fernet
 
 key = Fernet.generate_key()
 
