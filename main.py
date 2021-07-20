@@ -33,7 +33,7 @@ def cipher():
 
 
 def all_files():
-    obj = Fernet(key)
+    obj = Fernet(key) # the generated key is stored in variable obj
 
     file = open('key.txt', 'a+')
     file.write("KEYS:- " + str(key) + "\n") # key generated gets stored
